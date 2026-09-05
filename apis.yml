@@ -1,23 +1,118 @@
 aid: 247-ai
 name: '[24]7.ai'
-description: '[24]7.ai is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: '[24]7.ai is a customer-experience (CX) software and services company headquartered
+  in Campbell, California, operating the [24]7 Engagement Cloud — an AI-powered omnichannel
+  platform spanning campaign management and intent-based targeting ([24]7 Target), conversation
+  automation (Answers, Conversations, Voices natural-language IVR, async messaging), agent
+  experience (Assist / Copilot console, case management, traffic management) and conversational
+  intelligence (100% interaction analytics). Alongside the platform it runs managed CX and
+  customer-care outsourcing operations from the US, India, the Philippines, Colombia and
+  Guatemala. Platform capabilities are marketed as integrating with CRMs and back-office systems
+  through "API hooks", but no public developer portal, API reference or machine-readable contract
+  is published: product documentation and API access sit behind the Okta-backed customer login at
+  login.247.ai, and the production API host api.247-inc.net is tenant-routed.'
 url: https://raw.githubusercontent.com/api-evangelist/247-ai/refs/heads/main/apis.yml
+image: https://www.247.ai/wp-content/uploads/2023/12/247ai-logo.svg
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-09-05'
 modified: '2026-09-05'
+position: Producing
 tags:
 - Company
+- Customer Experience
+- Conversational AI
+- Contact Center
+- Customer Service
+- Chatbots
+- CCaaS
+- Artificial Intelligence
+- Interaction Analytics
+- Business Process Outsourcing
 apis: []
 maintainers:
 - FN: Kin Lane
+  name: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
+  name: APIs.json
   email: info@apis.io
 common:
 - type: Website
-  url: https://forgeglobal.com/247-ai_stock/
+  url: https://www.247.ai/
+- type: Portal
+  name: '[24]7 Engagement Cloud'
+  url: https://www.247.ai/247-engagement-cloud/
+- type: Login
+  name: '[24]7 Engagement Cloud product login (Okta SSO)'
+  url: https://login.247.ai/
+- type: Support
+  url: https://www.247.ai/support/
+- type: ContactUs
+  url: https://www.247.ai/contact-us/
+- type: Training
+  name: Learning Center
+  url: https://www.247.ai/learning-center/
+- type: Blog
+  url: https://www.247.ai/insights/blogs/
+- type: BlogRSS
+  url: https://www.247.ai/feed/
+- type: ChangeLog
+  name: Quarterly product release highlights
+  url: https://www.247.ai/insights/product-blogs/
+- type: ChangeLog
+  name: Captured changelog artifact
+  url: changelog/247-ai-changelog.yml
+- type: GitHubOrganization
+  url: https://github.com/247-ai
+- type: LinkedIn
+  url: https://www.linkedin.com/company/24-7-ai
+- type: Partners
+  url: https://www.247.ai/partner/
+- type: CaseStudies
+  url: https://www.247.ai/insights/case-studies/
+- type: TermsOfService
+  name: Platform Service Terms
+  url: https://www.247.ai/legal/platform-service-terms/
+- type: PrivacyPolicy
+  url: https://www.247.ai/privacy-policy/
+- type: ServiceLevelAgreement
+  name: Platform Support Services (99.9% uptime, severity response times)
+  url: https://www.247.ai/legal/platform-support-services/
+- type: Compliance
+  name: Security & compliance certifications
+  url: https://www.247.ai/security/
+- type: TrustCenter
+  url: https://www.247.ai/security/
+- type: OpenIDConnect
+  name: OIDC discovery (login.247.ai)
+  url: https://login.247.ai/.well-known/openid-configuration
+- type: LLMsTxt
+  url: llms/247-ai-llms.txt
+- type: WellKnown
+  url: well-known/247-ai-well-known.yml
+- type: Authentication
+  url: authentication/247-ai-authentication.yml
+- type: OAuthScopes
+  url: scopes/247-ai-scopes.yml
+- type: Conformance
+  url: conformance/247-ai-conformance.yml
+- type: Lifecycle
+  url: lifecycle/247-ai-lifecycle.yml
+- type: Packages
+  url: packages/247-ai-packages.yml
+- type: Plans
+  url: plans/247-ai-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/247-ai-rate-limits.yml
+- type: DomainSecurity
+  url: security/247-ai-domain-security.yml
+- type: TrustCenter
+  name: Captured trust-center artifact
+  url: security/247-ai-trust-center.yml
+x-enrichment:
+  date: '2026-09-05'
+  status: enriched
+  artifacts_added: 14
+  pass: local-v3

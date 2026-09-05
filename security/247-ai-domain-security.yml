@@ -1,0 +1,73 @@
+generated: '2026-09-05'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + related [24]7.ai production hosts
+note: >-
+  Baseline written by 0-working/probe-domain-security.py (www.247.ai + 247.ai). The
+  login.247.ai, api.247-inc.net and ph-chat.247-inc.com rows, and the 247-inc.net /
+  247-inc.com domain rows, were probed by hand with the same method (openssl s_client for
+  TLS version + cert expiry, HEAD for HSTS, dig for DNSSEC/CAA/SPF/DMARC) because apis[] is
+  empty for this provider and the script only walks apis.yml API hosts. api.247-inc.net is
+  [24]7.ai's tenant-routed production API host; its apex answers 503 from the load balancer.
+hosts:
+- host: www.247.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 29 23:59:59 2026 GMT
+  hsts: true
+  hsts_max_age: 300
+- host: login.247.ai
+  https: true
+  tls_version: TLSv1.2
+  cert_expires: Dec  8 04:06:07 2026 GMT
+  hsts: true
+  hsts_max_age: 315360000
+  hsts_include_subdomains: true
+  note: Okta-hosted [24]7 Engagement Cloud SSO tenant; serves OIDC + OAuth 2.0 discovery.
+- host: api.247-inc.net
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Feb  5 12:33:19 2027 GMT
+  hsts: false
+  http_status: 503
+  note: >-
+    Wildcard certificate CN=*.api.247-inc.net (SSL.com, issued 2026-02-05). Apex returns 503
+    from the load balancer; production traffic is per-tenant on subdomains.
+- host: ph-chat.247-inc.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Jan  9 10:45:01 2027 GMT
+  hsts: false
+  http_status: 200
+  note: Philippines chat/ChatbotAI console login host.
+domains:
+- domain: 247.ai
+  dnssec: false
+  caa:
+  - 0 issue "vikingcloud.com"
+  - 0 issue "ssl.com"
+  - 0 issue "securetrust.com"
+  - 0 issue "pki.goog"
+  - 0 issuewild "ssl.com"
+  - 0 issue "digicert.com"
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
+- domain: 247-inc.net
+  dnssec: false
+  caa:
+  - 0 bissue "trustwave.com"
+  - 0 bissuewild "trustwave.com"
+  - 0 bissue "ssl.com"
+  - 0 bissuewild "ssl.com"
+  - 0 bissue "godaddy.com"
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
+  dmarc_subdomain_policy: none
+- domain: 247-inc.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
+  dmarc_subdomain_policy: reject

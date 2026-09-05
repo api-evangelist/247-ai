@@ -1,0 +1,85 @@
+generated: '2026-09-05'
+method: searched
+source: >-
+  Direct HTTPS probes of the named /.well-known path list against every host this record
+  knows — the registrable domain and www, the product-login host, the tenant-routed
+  production API host, and the chat console host. apis[] is empty (no public API is
+  published), so there are no OpenAPI servers[] hosts to add.
+path_echo_control: passed
+note: >-
+  Two real documents were found, both on login.247.ai — [24]7.ai's Okta-hosted [24]7
+  Engagement Cloud SSO tenant: RFC 8414 OAuth 2.0 authorization server metadata and OpenID
+  Connect discovery. www.247.ai is a WordPress site that answers every /.well-known/* path
+  with a 404 HTML page (~506 KB), including the negative control, so nothing there is a hit.
+  api.247-inc.net answers 503 at its apex for every path (tenant-routed load balancer), and
+  ph-chat.247-inc.com returns a 404 HTML page. No security.txt, api-catalog, ai-plugin,
+  ucp/acp, aauth-resource, apis.json or agent card is served on any host.
+hit_count: 2
+hosts:
+- host: https://www.247.ai
+  soft_404_control:
+    path: /.well-known/247-ai-negative-control-7f3ab91c.json
+    status: 404
+    bytes: 506126
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/oauth-protected-resource, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/api-catalog.json, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/ucp.json, status: 404}
+  - {path: /.well-known/acp.json, status: 404}
+  - {path: /.well-known/aauth-resource.json, status: 404}
+  - {path: /.well-known/apis.json, status: 404}
+  - {path: /apis.json, status: 404}
+  - {path: /apis.yml, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+- host: https://247.ai
+  documents:
+  - {path: /.well-known/security.txt, status: 301, note: 'redirects to https://www.247.ai/'}
+  - {path: /.well-known/openid-configuration, status: 301}
+  - {path: /.well-known/oauth-authorization-server, status: 301}
+  - {path: /.well-known/agent-card.json, status: 301}
+  - {path: /apis.json, status: 301}
+- host: https://login.247.ai
+  soft_404_control:
+    path: /.well-known/247-ai-negative-control-7f3ab91c.json
+    status: 404
+    bytes: 152
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: 247-ai-openid-configuration.json
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: 247-ai-oauth-authorization-server.json
+  - {path: /.well-known/security.txt, status: 405}
+  - {path: /.well-known/oauth-protected-resource, status: 405}
+  - {path: /.well-known/api-catalog, status: 405}
+  - {path: /.well-known/api-catalog.json, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/ucp.json, status: 404}
+  - {path: /.well-known/acp.json, status: 404}
+  - {path: /.well-known/aauth-resource.json, status: 404}
+  - {path: /.well-known/apis.json, status: 404}
+  - {path: /apis.json, status: 404}
+  - {path: /apis.yml, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+- host: https://api.247-inc.net
+  documents:
+  - {path: /.well-known/security.txt, status: 503}
+  - {path: /.well-known/agent-card.json, status: 503}
+  - {path: /openapi.json, status: 503}
+  - {path: /swagger.json, status: 503}
+  - {path: /api-docs, status: 503}
+- host: https://ph-chat.247-inc.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /openapi.json, status: 404}
+  - {path: /swagger.json, status: 404}
+  - {path: /api-docs, status: 404}

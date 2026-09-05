@@ -1,0 +1,57 @@
+generated: '2026-09-05'
+method: searched
+source: https://www.247.ai/legal/platform-support-services/
+note: >-
+  [24]7.ai publishes no API versioning policy, no deprecation/sunset policy and no status
+  page — all three were probed and are recorded as absent below. What it does publish is a
+  contractual service-level and support document for the [24]7 Engagement Cloud platform,
+  captured here, plus a quarterly product-release blog (see changelog/247-ai-changelog.yml).
+versioning:
+  scheme: null
+  current: null
+  docs: null
+  note: >-
+    No public API reference exists, so no URI/header/date versioning scheme can be observed.
+    "Updates are released on a regular basis" with no published schedule
+    (https://www.247.ai/legal/platform-support-services/).
+deprecation:
+  policy_url: null
+  sunset_header: null
+  note: No deprecation or sunset policy is published.
+sla:
+  url: https://www.247.ai/legal/platform-support-services/
+  uptime_target: '99.9%'
+  measurement_window: calendar month
+  exclusions: [planned maintenance, force majeure]
+  planned_maintenance_cap: twelve (12) hours per quarter, at mutually agreed times
+  support_tiers:
+  - name: Standard
+    includes: [24/7 system monitoring, online case submission, self-paced training and documentation]
+  - name: Business
+    includes: [everything in Standard, 24/7 live phone support, email case submission]
+  - name: Enterprise
+    includes: [everything in Business, 10 developer support hours per month, Technical Account Manager]
+  severity_response:
+  - severity: 1
+    definition: Total business impact/outage resulting in disruption of critical services
+    standard: 30 minutes
+    business: 30 minutes
+    enterprise: 30 minutes
+    worked: until the incident is resolved
+  - severity: 2
+    definition: Major impact events affecting <25% and >10% of traffic
+    standard: 2 hours
+    business: 1 hour
+    enterprise: 1 hour
+    worked: until the incident is resolved
+  - severity: 3
+    definition: Medium impact events affecting <=10% of traffic
+    standard: 6 hours
+    business: 6 hours
+    enterprise: 4 hours
+status_page: null
+status_page_probe:
+- {url: 'https://247ai.statuspage.io/', status: 302, note: 'redirects to https://www.statuspage.io/ — identical to the negative control https://zzznotarealtenant9x.statuspage.io/, so this is not a tenant'}
+- {url: 'https://status.247.ai/', status: 0, note: NXDOMAIN}
+- {url: 'https://status.247-inc.com/', status: 0, note: NXDOMAIN}
+deprecated_operations: []

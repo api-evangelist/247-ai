@@ -1,0 +1,34 @@
+generated: '2026-09-05'
+method: searched
+probe: true
+url: https://www.247.ai/security/
+note: >-
+  0-working/probe-security-programs.py recorded trust=none (its keyword threshold did not
+  fire on this page). Re-fetched by hand — https://www.247.ai/security/ returns HTTP 200 and
+  is a genuine security/compliance posture page naming certifications and privacy
+  frameworks, quoted verbatim below. It is not a hosted trust portal (no Vanta/Drata/SafeBase
+  style document request flow) and it publishes no audit reports for download.
+certifications:
+- SOC 2 Type 2
+- ISO/IEC 27001:2022
+- HIPAA
+- PCI DSS
+- NIST SP 800-53 R4/R5
+- NIST Cybersecurity Framework (CSF)
+privacy_frameworks:
+- GDPR
+- CCPA
+- APEC Cross-Border Privacy Rules (CBPR)
+- Data Privacy Framework (EU-US)
+- Philippines National Privacy Commission (NPC) registration with an appointed DPO
+documents_available: false
+report_request_flow: false
+evidence:
+- source: https://www.247.ai/security/
+  http_status: 200
+  fetched: '2026-09-05'
+  keywords: ['SOC 2', 'ISO/IEC 27001:2022', 'HIPAA', 'PCI DSS', 'NIST Cybersecurity Framework', 'GDPR', 'CCPA', 'CBPR', 'Data Privacy Framework']
+related:
+  privacy_policy: https://www.247.ai/privacy-policy/
+  terms: https://www.247.ai/legal/platform-service-terms/
+  vulnerability_disclosure: null

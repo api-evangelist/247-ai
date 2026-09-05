@@ -1,0 +1,16 @@
+generated: '2026-09-05'
+method: searched
+source: https://www.247.ai/
+limit_count: 0
+note: >-
+  No rate limits are published. [24]7.ai has no public API reference in which limits or
+  429/Retry-After behaviour could be documented — product documentation sits behind the
+  customer login at login.247.ai — and the production API host api.247-inc.net answers 503 at
+  its apex, so no live response headers could be observed either. Recorded as an honest zero
+  rather than omitted.
+headers: []
+limits: []
+x-evidence:
+- {url: 'https://www.247.ai/llms.txt', http_status: 200, note: 'provider-published site index names no developer or API reference section'}
+- {url: 'https://api.247-inc.net/', http_status: 503, note: 'tenant-routed load balancer; no anonymous response headers observable'}
+- {url: 'https://login.247.ai/', http_status: 200, note: 'Okta sign-in; product documentation is behind it'}

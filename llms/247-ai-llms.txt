@@ -1,0 +1,124 @@
+# [24]7.ai
+
+> [24]7.ai is a leading provider of AI-powered Customer Experience (CX) management services, solutions, and platforms. The company blends deep operational expertise, omnichannel customer interaction support, and award-winning AI-powered CX products to help global brands deliver personalized, accurate, and effective customer experiences. With 25+ years of experience, [24]7.ai supports 55+ brands across 10+ industries with a global team of 10,500+.
+
+## Core Platform
+
+- [[24]7 Engagement Cloud](https://www.247.ai/247-engagement-cloud/): AI-powered omnichannel CX platform covering the full customer journey — from acquisition to long-term retention — on a single unified platform.
+
+## Products
+
+- [Campaign Management](https://www.247.ai/products/campaign-management/): AI-driven campaign tools for intent-based ad targeting, personalized video ads, and programmatic display across open web and social platforms (Facebook, YouTube).
+- [Conversation Automation](https://www.247.ai/products/conversation-automation/): Omnichannel self-service automation including chatbots, natural language IVR, semantic search, async messaging, and voice interactions.
+- [Agent Experience](https://www.247.ai/products/agent-experience/): Unified agent console, real-time AI assistance ([24]7 Assist/Copilot), intelligent traffic management, case management, live intervention tools, and profanity detection.
+- [Conversational Intelligence](https://www.247.ai/products/conversational-intelligence/): AI-driven analytics for 100% interaction analysis, agent performance management, and historical conversation insights.
+- [Digital Customer Service Platform](https://www.247.ai/digital-customer-service-platform/): Platform features including real-time agent assist, auto-summarization, intelligent automation, and integrated learning loops.
+
+## Services
+
+- [[24]7 CX Services](https://www.247.ai/services/cx-services/): AI-powered CX operations combining human agents, predictive analytics, and intelligent automation.
+- [Customer Care Outsourcing](https://www.247.ai/services/customer-care-outsourcing/): Managed BPO services using the ACE (Accelerating Consistent Excellence) framework for agent training, performance, and retention.
+- [[24]7 Analytics](https://www.247.ai/services/analytics/): Interaction analytics service to analyze 100% of customer interactions and turn insights into action.
+- [[24]7 Professional Services](https://www.247.ai/services/247-professional-services/): Application deployment, integration services, joint deployment, and continuous CX operations support.
+- [CX Launchpad](https://www.247.ai/cx-launchpad/): Scalable CX solution designed for mid-sized brands.
+- [Digital Transformation](https://www.247.ai/digital-transformation-for-contact-centers/): End-to-end digital transformation services for contact centers.
+
+## Solutions by Use Case
+
+- [Managed Customer Engagement (MCE)](https://www.247.ai/solutions/managed-customer-engagement/): End-to-end CX management combining platform + services.
+- [Customer Acquisition](https://www.247.ai/solutions/customer-acquisition/): Solutions for acquiring new customers through AI-powered campaigns and targeting.
+- [Customer Self-Service](https://www.247.ai/solutions/customer-self-service/): Automated self-service across voice, chat, and digital channels.
+- [Contact Center Software](https://www.247.ai/solutions/contact-center-software/): CCaaS software for running modern contact centers.
+- [Customer Engagement](https://www.247.ai/solutions/customer-engagement/): Tools and services for nurturing and retaining customers.
+
+## Solutions by Industry
+
+- [Retail](https://www.247.ai/industry/retail/)
+- [Telecom & Communication](https://www.247.ai/industry/telecom/)
+- [Financial Services](https://www.247.ai/industry/financial-services/)
+- [Insurance](https://www.247.ai/industry/insurance/)
+- [Travel & Hospitality](https://www.247.ai/industry/travel-hospitality/)
+- [Consumer Packaged Goods](https://www.247.ai/industry/consumer-packaged-goods/)
+- [Education](https://www.247.ai/industry/education/)
+- [Healthcare](https://www.247.ai/industry/healthcare/)
+- [Utilities](https://www.247.ai/industry/utilities/)
+- [Pet Industry](https://www.247.ai/industry/pet-industry/)
+
+## Company
+
+- [About Us](https://www.247.ai/about-us/): Company overview, mission, and history.
+- [Leadership](https://www.247.ai/leadership/): Executive leadership team profiles.
+- [Corporate Social Responsibility](https://www.247.ai/corporate-social-responsibility/): [24]7.ai's CSR initiatives.
+- [Awards & Recognition](https://www.247.ai/awards-recognition/): Industry recognition including US Customer Experience Awards Gold (Best Contact Center, Best Customer Service), CCW Excellence Awards, Quadrant Knowledge Solutions, ISG, Forrester Tech Tide, and more.
+- [Partner Program](https://www.247.ai/partner/): Partnership opportunities with [24]7.ai.
+- [News & Updates](https://www.247.ai/news-updates/): Press releases and company news.
+- [Company Events](https://www.247.ai/company-events/): Webinars, LinkedIn Live events, and conferences.
+- [The Age of Intent (Book)](https://www.247.ai/book/): Book by [24]7.ai CEO P.V. Kannan on the future of AI and customer experience.
+
+## Global Presence & Locations
+
+- [Contact Us / Global Presence](https://www.247.ai/contact-us/): Headquarters: 2105 S. Bascom Ave., Suite 195, Campbell, CA 95008. Phone: +1 650 385 2247.
+- [Latin America](https://www.247.ai/latam/)
+- [Philippines](https://www.247.ai/philippines/) | [Call Center in Philippines](https://www.247.ai/call-center-in-philippines/)
+- [India](https://www.247.ai/india/) | [Call Center in India](https://www.247.ai/call-center-in-india-247ai/)
+- [Guatemala](https://www.247.ai/call-center-in-guatemala/)
+
+## Insights & Resources
+
+- [All Insights](https://www.247.ai/insights/): Hub for all content including blogs, case studies, analyst reports, videos, and thought leadership.
+- [Blogs](https://www.247.ai/insights/blogs/): Articles on CX trends, AI, and contact center best practices.
+- [Product Blogs](https://www.247.ai/insights/product-blogs/): Quarterly product release highlights and product-focused content.
+- [Case Studies](https://www.247.ai/insights/case-studies/): Customer success stories across industries.
+- [Analyst Reports](https://www.247.ai/insights/analyst-reports/): Third-party analyst research featuring [24]7.ai.
+- [Thought Leadership](https://www.247.ai/insights/thought-leadership/): Whitepapers and in-depth CX strategy content.
+- [Data Sheets](https://www.247.ai/insights/data-sheets/): Product and solution data sheets.
+- [Videos](https://www.247.ai/insights/videos/): Company and product overview videos.
+- [Product Videos](https://www.247.ai/insights/product-videos/): Demos and walkthroughs of [24]7.ai products.
+- [Infographics](https://www.247.ai/insights/infographics/): Visual guides on CX topics.
+- [Learning Center](https://www.247.ai/learning-center/): Educational resources for [24]7 Engagement Cloud products.
+- [Glossary](https://www.247.ai/glossary/): Definitions of key CX and AI terms.
+
+## Reads (Long-Form Educational Content)
+
+- [All Reads](https://www.247.ai/reads/): Long-form educational articles hub.
+- [Customer Experience in 2026](https://www.247.ai/reads/customer-experience-in-2026/): 7 ways AI will revolutionize CX.
+- [Contact Center as a Service (CCaaS)](https://www.247.ai/reads/contact-center-as-a-service/): Guide to CCaaS platforms and key features.
+- [Conversational AI Explained](https://www.247.ai/reads/conversational-ai-explained/): How conversational AI works and its applications.
+- [Conversational Intelligence](https://www.247.ai/reads/conversational-intelligence/): Deep dive into conversational intelligence and why it matters.
+- [Fraud Detection in Customer Service](https://www.247.ai/reads/fraud-detection/): How AI-powered fraud detection works in contact centers.
+- [Social Media Advertising](https://www.247.ai/reads/social-media-advertising/): Framework for modern social media advertising.
+- [AI-Powered CX Management Platforms](https://www.247.ai/reads/ai-powered-cx-management-platforms/): Impact of AI platforms on customer experience.
+- [Customer Service Trends](https://www.247.ai/reads/customer-service-trends/): Top 10 customer service trends to watch.
+
+## Notable Case Studies
+
+- [US Warehouse Club CX Transformation](https://www.247.ai/insight/us-warehouse-club-operator-achieves-cx-transformation/): Managed Customer Engagement driving CX transformation for a major US retailer.
+- [Electronics Retailer – 78% Increase in RPC](https://www.247.ai/insight/boosted-chat-sales-for-a-leading-electronics-retailer/): Boosted revenue with expert sales chat agents.
+- [PepsiCo – $1.8M Incremental Revenue](https://www.247.ai/insight/pepsico-boosts-engagement-sales-lift/): +3% sales lift using [24]7 Target.
+- [Pet Insurance – 5.75% CTR](https://www.247.ai/insight/247-target-boosts-sales-for-a-pet-insurance-leader/): Hyper-personalized video ads boosting sales.
+- [Telecom Provider – 84% Decrease in Transfer Rates](https://www.247.ai/insight/how-247-achieved-chat-support/): Elevated chat channel resolve rates.
+- [Financial Services – $1B Savings](https://www.247.ai/insight/financial-services-organization-saves-1b-with-247-voices/): Cost savings with [24]7 Voices IVR automation.
+- [University FAQ Automation](https://www.247.ai/insight/145-year-old-university-automates-its-faq-process-with-247-answers/): A 145-year-old university automating FAQ processes with [24]7 Answers.
+- [Healthcare Employee Experience Automation](https://www.247.ai/insight/healthcare-provider-transforms-employee-experience-through-automation/)
+- [Aerospace HR Inquiry Automation](https://www.247.ai/insight/aerospace-and-defense-company-prepares-for-flood-of-hr-inquires-with-247-ai-chatbots-and-faqs/)
+- [Fortune 100 Financial Leader – NPS +142%](https://www.247.ai/insight/appreciative-inquiry-ai-coaching-skyrockets-nps-by-142-for-a-fortune-100-financial-leader/)
+
+## Trust & Legal
+
+- [Privacy Policy](https://www.247.ai/privacy-policy/)
+- [Security](https://www.247.ai/security/)
+- [Legal](https://www.247.ai/legal/)
+- [Platform Service Terms](https://www.247.ai/legal/platform-service-terms/)
+- [Platform Product Descriptions](https://www.247.ai/legal/platform-product-descriptions/)
+- [Platform Support Services](https://www.247.ai/legal/platform-support-services/)
+
+## Careers
+
+- [Life at [24]7.ai](https://www.247.ai/careers/): Culture, values, and employee experience.
+- [Open Positions](https://www.247.ai/jobs/): Job openings in US, India, Philippines, Colombia, and Guatemala.
+
+## Product Access
+
+- [Product Login & Support](https://www.247.ai/product-login-and-support/)
+- [Support](https://www.247.ai/support/)
+- [Schedule a Demo](https://www.247.ai/schedule-a-demo/)

@@ -1,0 +1,18 @@
+generated: '2026-09-05'
+method: searched
+source: https://www.247.ai/
+plan_count: 0
+note: >-
+  [24]7.ai publishes no pricing. There is no /pricing page and no plans/tiers page anywhere
+  on www.247.ai; the site's own llms.txt (https://www.247.ai/llms.txt, HTTP 200) enumerates
+  every public section and lists no pricing page either. The commercial motion is
+  contact-sales: "Schedule a Demo" (https://www.247.ai/schedule-a-demo/) 301-redirects to the
+  contact form. The one published commercial gradation is SUPPORT tiers (Standard / Business
+  / Enterprise) in the Platform Support Services document, which carry entitlements but no
+  prices — captured in lifecycle/247-ai-lifecycle.yml, not here, because they are not
+  purchasable plans with published rates.
+plans: []
+x-evidence:
+- {url: 'https://www.247.ai/llms.txt', http_status: 200, note: 'no pricing entry in the provider-published site index'}
+- {url: 'https://www.247.ai/schedule-a-demo/', http_status: 301, note: 'redirects to https://www.247.ai/contact-us/'}
+- {url: 'https://www.247.ai/contact-us/', http_status: 200}

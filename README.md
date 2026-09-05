@@ -64,5 +64,9 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-[24]7.ai is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/247-ai_stock/
+[24]7.ai is a customer-experience (CX) software and services company headquartered in Campbell, California, operating the [24]7 Engagement Cloud — an AI-powered omnichannel platform spanning campaign management, conversation automation (chatbots, natural-language IVR, async messaging), agent experience and conversational intelligence — alongside managed CX and customer-care outsourcing operations.
+
+Profiled 2026-09-05. [24]7.ai publishes **no public developer portal, API reference, or machine-readable contract**: product documentation and API access sit behind the Okta-backed customer login at `login.247.ai`, and the production API host `api.247-inc.net` is tenant-routed (apex returns 503). What it does publish, and what this repository captures, is a verbatim `llms.txt`, live OpenID Connect and OAuth 2.0 discovery documents, a named security/compliance posture, a contractual SLA, a quarterly product-release surface, and four first-party open-source packages on Maven Central.
+
+- https://www.247.ai/
+- https://github.com/247-ai

@@ -1,0 +1,107 @@
+generated: '2026-09-05'
+method: searched
+source: >-
+  Maven Central (search.maven.org + repo1.maven.org maven-metadata.xml), npm registry,
+  PyPI, RubyGems, crates.io, CocoaPods trunk, and the github.com/247-ai organization.
+note: >-
+  [24]7.ai publishes no API client SDK. Everything first-party that reaches a public
+  registry is open-source data-science tooling from its Data Science Engineering team, last
+  released in 2019-2020. The two mobile SDKs that WOULD be API clients ([24]7 Android SDK,
+  [24]7 iOS SDK) are GitHub repositories carrying an explicit "[DEPRECATED] This repository
+  is deprecated and not in use" banner, with no registry artifact of any kind (CocoaPods
+  trunk 404, npm 404). No `SDKs` pointer is emitted in apis.yml for that reason: crediting an
+  SDK surface here would assert a client library [24]7.ai no longer distributes.
+sdk_count: 0
+package_count: 7
+packages:
+- language: scala
+  registry: maven
+  name: com.github.247-ai:FlashML
+  url: https://central.sonatype.com/artifact/com.github.247-ai/FlashML
+  install: '<dependency><groupId>com.github.247-ai</groupId><artifactId>FlashML</artifactId><version>2019.4</version></dependency>'
+  version: '2019.4'
+  published: '2020-01-17'
+  official: true
+  client_library: false
+  license: Apache-2.0
+  repo: https://github.com/247-ai/FlashML
+  description: Automated ML model training framework on Apache Spark, from the [24]7.ai Data Science Engineering team.
+- language: scala
+  registry: maven
+  name: com.github.247-ai:Tucana
+  url: https://central.sonatype.com/artifact/com.github.247-ai/Tucana
+  install: '<dependency><groupId>com.github.247-ai</groupId><artifactId>Tucana</artifactId><version>1.0</version></dependency>'
+  version: '1.0'
+  published: '2019-12-20'
+  official: true
+  client_library: false
+  repo: https://github.com/247-ai/Tucana
+  description: Akka-HTTP service for deploying Spark (MLeap) models and JavaScript/Python rules in production.
+- language: scala
+  registry: maven
+  name: com.github.247-ai:ModelServer
+  url: https://central.sonatype.com/artifact/com.github.247-ai/ModelServer
+  install: '<dependency><groupId>com.github.247-ai</groupId><artifactId>ModelServer</artifactId><version>1.0</version></dependency>'
+  version: '1.0'
+  published: '2019-12-20'
+  official: true
+  client_library: false
+  repo: https://github.com/247-ai/ModelServer
+- language: java
+  registry: maven
+  name: com.github.247-ai:Flashml-Log-Server
+  url: https://central.sonatype.com/artifact/com.github.247-ai/Flashml-Log-Server
+  install: '<dependency><groupId>com.github.247-ai</groupId><artifactId>Flashml-Log-Server</artifactId><version>1.0</version></dependency>'
+  version: '1.0'
+  published: '2019-12-09'
+  official: true
+  client_library: false
+  repo: https://github.com/247-ai/FlashML-Log-Server
+- language: kotlin
+  registry: none
+  name: '[24]7 Android SDK'
+  url: https://github.com/247-ai/mobile-sdk-android
+  version: null
+  published: null
+  official: true
+  client_library: true
+  status: deprecated
+  note: >-
+    Source-only. The repository README states "[DEPRECATED] This repository is deprecated and
+    not in use." No Maven/Gradle coordinate is published; checked 2026-09-05.
+- language: swift
+  registry: none
+  name: '[24]7 iOS SDK'
+  url: https://github.com/247-ai/mobile-sdk-ios
+  version: null
+  published: null
+  official: true
+  client_library: true
+  status: deprecated
+  note: >-
+    Source-only and marked "[DEPRECATED] ... not in use". CocoaPods trunk returns 404 for the
+    pod; no Swift Package Manager manifest is published. Checked 2026-09-05.
+- language: javascript
+  registry: none
+  name: tfs-react-native
+  url: https://github.com/247-ai/tfs-react-native
+  version: null
+  published: null
+  official: true
+  client_library: false
+  status: deprecated
+  note: >-
+    React Native dependencies vendored for the proprietary [24]7.ai iOS/Android SDKs. Marked
+    deprecated; https://registry.npmjs.org/tfs-react-native returns {"error":"Not found"}.
+registries_checked:
+- {registry: maven, result: '4 first-party artifacts under groupId com.github.247-ai'}
+- {registry: npm, result: 'no first-party package; no @247ai / @247-inc scope exists'}
+- {registry: pypi, result: none}
+- {registry: rubygems, result: none}
+- {registry: crates.io, result: none}
+- {registry: nuget, result: none}
+- {registry: cocoapods, result: 'trunk 404 for the [24]7 iOS SDK'}
+- {registry: 'pkg.go.dev', result: none}
+decay_signal: >-
+  Every first-party package with a registry release is more than six years old (newest
+  2020-01-17). The only client-facing SDKs are explicitly deprecated by the vendor.

@@ -1,0 +1,39 @@
+generated: '2026-09-05'
+method: probed
+source: https://login.247.ai/.well-known/oauth-authorization-server
+note: >-
+  [24]7.ai publishes no OpenAPI and no public scopes/permissions reference page. These scopes
+  were read from the live discovery documents served by login.247.ai, the Okta-hosted [24]7
+  Engagement Cloud SSO tenant. IMPORTANT PROVENANCE CAVEAT: the org authorization server
+  additionally advertises 80 `okta.*` scopes. Those belong to Okta's own Management API
+  running on the tenant — they are Okta's product surface, not a [24]7.ai product API scope
+  catalog — and are therefore recorded below as a counted, attributed block rather than
+  listed as [24]7.ai scopes. Only the standard OIDC scopes are attributable to the [24]7.ai
+  sign-in surface itself.
+schemes:
+- name: '[24]7 Engagement Cloud SSO'
+  source: well-known/247-ai-openid-configuration.json
+  issuer: https://login.247.ai
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://login.247.ai/oauth2/v1/authorize
+    tokenUrl: https://login.247.ai/oauth2/v1/token
+scopes:
+- {scope: openid, description: 'OpenID Connect sign-in; issues an ID token.', flows: [authorizationCode], sources: [well-known/247-ai-openid-configuration.json]}
+- {scope: profile, description: 'Basic profile claims (name, preferred_username, locale, updated_at).', flows: [authorizationCode], sources: [well-known/247-ai-openid-configuration.json]}
+- {scope: email, description: 'email and email_verified claims.', flows: [authorizationCode], sources: [well-known/247-ai-openid-configuration.json]}
+- {scope: address, description: 'address claim.', flows: [authorizationCode], sources: [well-known/247-ai-openid-configuration.json]}
+- {scope: phone, description: 'phone_number claim.', flows: [authorizationCode], sources: [well-known/247-ai-openid-configuration.json]}
+- {scope: groups, description: 'Group memberships of the signed-in user.', flows: [authorizationCode], sources: [well-known/247-ai-openid-configuration.json]}
+- {scope: offline_access, description: 'Issues a refresh token.', flows: [authorizationCode], sources: [well-known/247-ai-openid-configuration.json]}
+not_attributed_to_provider:
+  count: 80
+  prefix: 'okta.*'
+  owner: Okta
+  reason: >-
+    Okta Management API scopes (okta.users.*, okta.apps.*, okta.logs.read, …) advertised by
+    the tenant's org authorization server. They govern administration of the Okta tenant, not
+    a [24]7.ai product API, and are not counted as [24]7.ai scopes.
+  source: well-known/247-ai-oauth-authorization-server.json
+x-evidence:
+- {url: 'https://login.247.ai/.well-known/oauth-authorization-server', http_status: 200, fetched: '2026-09-05'}

@@ -1,0 +1,42 @@
+generated: '2026-09-05'
+method: searched
+source: https://www.247.ai/insights/product-blogs/
+note: >-
+  [24]7.ai publishes no developer changelog or API release notes. Its release surface is a
+  quarterly "Product Release Highlights" post on the marketing blog — product-level, prose,
+  no version numbers and no API-level breaking-change notice. The quarter labels in the post
+  slugs do not track the publication dates (the post slugged "q2-2025" was published after
+  the one slugged "q1-2026"); the published dates below are the article datePublished values
+  read from each page's JSON-LD, which is the only reliable dating available.
+scheme: quarterly product release highlights (prose, unversioned)
+current_version: null
+feed: https://www.247.ai/feed/
+entries:
+- title: '[24]7.ai Quarterly Product Release Highlights Q3'
+  slug: q3-2026
+  url: https://www.247.ai/insight/247-ai-quarterly-product-release-highlights-q3-2026/
+  published: '2026-01-06'
+  modified: '2026-08-13'
+  breaking: false
+  highlights:
+  - 'Agent Training: new "Vulnerable" customer persona type for simulation training'
+  - 'Agent Training: unified environment consolidating Foundation Level programs into four groups (Sales-Voice, Sales-Chat, Service-Voice, Service-Chat)'
+  - 'Agent Training: consolidated performance reporting with filtering'
+- title: '[24]7.ai Quarterly Product Release Highlights Q2'
+  slug: q2-2025
+  url: https://www.247.ai/insight/247-ai-quarterly-product-release-highlights-q2-2025/
+  published: '2025-11-10'
+  modified: '2026-08-13'
+  breaking: null
+- title: '[24]7.ai Quarterly Product Release Highlights Q1'
+  slug: q1-2026
+  url: https://www.247.ai/insight/247-ai-quarterly-product-release-highlights-q1-2026/
+  published: '2025-09-01'
+  modified: '2026-01-27'
+  breaking: null
+api_changelog: null
+x-evidence:
+- {url: 'https://www.247.ai/insights/product-blogs/', http_status: 200, fetched: '2026-09-05'}
+- {url: 'https://www.247.ai/insight/247-ai-quarterly-product-release-highlights-q3-2026/', http_status: 200, fetched: '2026-09-05'}
+- {url: 'https://www.247.ai/insight/247-ai-quarterly-product-release-highlights-q2-2025/', http_status: 200, fetched: '2026-09-05'}
+- {url: 'https://www.247.ai/insight/247-ai-quarterly-product-release-highlights-q1-2026/', http_status: 200, fetched: '2026-09-05'}

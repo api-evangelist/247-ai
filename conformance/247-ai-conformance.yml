@@ -1,0 +1,78 @@
+generated: '2026-09-05'
+method: searched
+source: https://www.247.ai/security/
+note: >-
+  Two independent evidence sources. The security/compliance posture was read from [24]7.ai's
+  own public security page (fetched 2026-09-05, HTTP 200) and quoted verbatim in each
+  evidence line. The protocol conformance below was read from the live discovery documents
+  served by login.247.ai and saved under well-known/ — content, not status codes. No
+  domain-standard signature (SCIM URN, OData $metadata, OpenRTB, HL7v2, X12, FHIR, LTI …)
+  could be tested, because [24]7.ai publishes no machine-readable API contract at all; the
+  slot is left unclaimed rather than filled. CX / contact-center has no widely-adopted
+  interoperability contract standard of the kind domain_standard_conformance rewards.
+standards:
+- id: oidc-discovery-1.0
+  conforms: true
+  evidence: 'https://login.247.ai/.well-known/openid-configuration returns 200 application/json with issuer, authorization_endpoint, token_endpoint, userinfo_endpoint and jwks_uri.'
+- id: rfc8414-oauth-authorization-server-metadata
+  conforms: true
+  evidence: 'https://login.247.ai/.well-known/oauth-authorization-server returns 200 application/json with issuer, token_endpoint, introspection_endpoint and revocation_endpoint.'
+- id: oauth2
+  conforms: true
+  evidence: 'grant_types_supported includes authorization_code, client_credentials, refresh_token and urn:ietf:params:oauth:grant-type:device_code.'
+- id: rfc7636-pkce
+  conforms: true
+  evidence: 'code_challenge_methods_supported = [S256].'
+- id: rfc7591-dynamic-client-registration
+  conforms: true
+  evidence: 'registration_endpoint = https://login.247.ai/oauth2/v1/clients.'
+- id: rfc8628-device-authorization-grant
+  conforms: true
+  evidence: 'grant_types_supported includes urn:ietf:params:oauth:grant-type:device_code.'
+- id: rfc9449-dpop
+  conforms: true
+  evidence: 'dpop_signing_alg_values_supported = [RS256, RS384, RS512, ES256, ES384, ES512].'
+- id: soc2-type2
+  conforms: true
+  evidence: '"SOC 2 Type 2 attestation, which ensures we have met the criteria for managing customer data based on five AICPA Trust Service Principles" — https://www.247.ai/security/'
+- id: iso-iec-27001-2022
+  conforms: true
+  evidence: '"ISO/IEC 27001:2022 is a security management standard that specifies security management best practices" — https://www.247.ai/security/'
+- id: hipaa
+  conforms: true
+  evidence: '"[24]7 is compliant with Health Insurance Portability and Accountability Act (HIPAA)" — Privacy, Security and Breach Notification Rules — https://www.247.ai/security/'
+- id: pci-dss
+  conforms: true
+  evidence: 'PCI DSS named as part of the security program — https://www.247.ai/security/'
+- id: nist-sp-800-53
+  conforms: true
+  evidence: '"NIST 800-53 ... Security and Privacy Controls for Information Systems and Organizations" — https://www.247.ai/security/'
+- id: nist-csf
+  conforms: true
+  evidence: '"the NIST Cybersecurity Framework (CSF)" — https://www.247.ai/security/'
+- id: gdpr
+  conforms: true
+  evidence: 'GDPR section on https://www.247.ai/security/ plus a Data Processing Addendum with Model Clauses.'
+- id: ccpa
+  conforms: true
+  evidence: 'CCPA section on https://www.247.ai/security/'
+- id: apec-cbpr
+  conforms: true
+  evidence: '"APEC Cross-Border Privacy Rules (CBPR) System" — https://www.247.ai/security/'
+- id: eu-us-data-privacy-framework
+  conforms: true
+  evidence: '"The Data Privacy Framework aims to enable the compliant transfer of personal data from data controllers in the EU" — https://www.247.ai/security/'
+- id: fedramp
+  conforms: false
+  evidence: 'Not named anywhere on https://www.247.ai/security/'
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: 'No published API contract to test.'
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: '/.well-known/security.txt returns 404 on www.247.ai and 405 on login.247.ai — see well-known/247-ai-well-known.yml'
+domain_standard:
+  claimed: null
+  reason: >-
+    Not assessable — no machine-readable contract is published, so no domain-standard
+    signature can be read from a spec. Reward-only dimension; no penalty asserted.

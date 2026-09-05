@@ -1,0 +1,53 @@
+generated: '2026-09-05'
+method: probed
+source: https://login.247.ai/.well-known/openid-configuration
+docs: https://www.247.ai/product-login-and-support/
+note: >-
+  [24]7.ai publishes no OpenAPI, so there are no securitySchemes to derive from
+  (0-working/derive-authentication.py has no spec input for this provider). What IS
+  machine-readable is the identity surface: login.247.ai — the Okta-hosted [24]7 Engagement
+  Cloud SSO tenant — serves live OpenID Connect discovery (OIDC Discovery 1.0) and OAuth 2.0
+  authorization server metadata (RFC 8414). Both were fetched anonymously and saved verbatim
+  under well-known/. This describes how a HUMAN or a registered client signs in to the
+  Engagement Cloud, not how a product API is authenticated; [24]7.ai documents no public API
+  authentication because it publishes no public API reference.
+summary:
+  types: [openIdConnect, oauth2]
+  oauth2_flows: [authorizationCode, implicit, refreshToken, password, clientCredentials, deviceCode]
+  pkce: [S256]
+  api_key_in: []
+schemes:
+- name: '[24]7 Engagement Cloud SSO (OpenID Connect)'
+  type: openIdConnect
+  openIdConnectUrl: https://login.247.ai/.well-known/openid-configuration
+  issuer: https://login.247.ai
+  sources: [well-known/247-ai-openid-configuration.json]
+  endpoints:
+    authorization: https://login.247.ai/oauth2/v1/authorize
+    token: https://login.247.ai/oauth2/v1/token
+    userinfo: https://login.247.ai/oauth2/v1/userinfo
+    jwks: https://login.247.ai/oauth2/v1/keys
+    registration: https://login.247.ai/oauth2/v1/clients
+    end_session: https://login.247.ai/oauth2/v1/logout
+  response_types: [code, id_token, 'code id_token', 'code token', 'id_token token', 'code id_token token']
+  grant_types: [authorization_code, implicit, refresh_token, password, 'urn:ietf:params:oauth:grant-type:device_code']
+  token_endpoint_auth_methods: [client_secret_basic, client_secret_post, client_secret_jwt, private_key_jwt, none]
+  code_challenge_methods: [S256]
+  dynamic_client_registration: true
+- name: '[24]7 Engagement Cloud org authorization server (OAuth 2.0)'
+  type: oauth2
+  metadata: https://login.247.ai/.well-known/oauth-authorization-server
+  issuer: https://login.247.ai
+  sources: [well-known/247-ai-oauth-authorization-server.json]
+  endpoints:
+    authorization: https://login.247.ai/oauth2/v1/authorize
+    token: https://login.247.ai/oauth2/v1/token
+    introspection: https://login.247.ai/oauth2/v1/introspect
+    revocation: https://login.247.ai/oauth2/v1/revoke
+  grant_types: [authorization_code, implicit, refresh_token, password, client_credentials, 'urn:ietf:params:oauth:grant-type:device_code']
+  dpop_signing_algs: [RS256, RS384, RS512, ES256, ES384, ES512]
+  scopes_ref: scopes/247-ai-scopes.yml
+x-evidence:
+- {url: 'https://login.247.ai/.well-known/openid-configuration', http_status: 200, content_type: application/json, fetched: '2026-09-05'}
+- {url: 'https://login.247.ai/.well-known/oauth-authorization-server', http_status: 200, content_type: application/json, fetched: '2026-09-05'}
+- {url: 'https://www.247.ai/llms.txt', http_status: 200, note: 'names no developer portal, API reference or authentication guide'}
