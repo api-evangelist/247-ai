@@ -1,6 +1,13 @@
 generated: '2026-10-14'
 method: searched
 checked:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
 - https://storage.googleapis.com/tcfac/additional-consent-providers.csv
 marketplace_apps: []
 edges:
@@ -27,3 +34,68 @@ edges:
     detected: '2026-10-14'
   detected_by: sweep-adtech.py
   detected: '2026-10-14'
+- partner_name: Maven Central
+  partner: maven-central
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (Java/JVM)
+  evidence: https://central.sonatype.com/artifact/com.github.247-ai/FlashML
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: Maven Central (public registry JSON)
+    spec_file: null
+    language: Java/JVM
+    packages:
+    - name: com.github.247-ai:FlashML
+      version: '2019.4'
+      released: '2020-01-17'
+      released_field: lastUpdated
+      lapsed: true
+      page: https://central.sonatype.com/artifact/com.github.247-ai/FlashML
+      repo_leg: github-org:247-ai
+      publisher_leg: org:247-ai
+      matched_by: github-org
+    - name: com.github.247-ai:Flashml-Log-Server
+      version: '1.0'
+      released: '2019-12-09'
+      released_field: lastUpdated
+      lapsed: true
+      page: https://central.sonatype.com/artifact/com.github.247-ai/Flashml-Log-Server
+      repo_leg: github-org:247-ai
+      publisher_leg: org:247-ai
+      matched_by: github-org
+    - name: com.github.247-ai:ModelServer
+      version: '1.0'
+      released: '2019-12-20'
+      released_field: lastUpdated
+      lapsed: true
+      page: https://central.sonatype.com/artifact/com.github.247-ai/ModelServer
+      repo_leg: github-org:247-ai
+      publisher_leg: org:247-ai
+      matched_by: github-org
+    - name: com.github.247-ai:Tucana
+      version: '1.0'
+      released: '2019-12-20'
+      released_field: lastUpdated
+      lapsed: true
+      page: https://central.sonatype.com/artifact/com.github.247-ai/Tucana
+      repo_leg: github-org:247-ai
+      publisher_leg: org:247-ai
+      matched_by: github-org
+    current: false
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
+source:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
