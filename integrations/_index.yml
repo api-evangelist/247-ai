@@ -26,3 +26,88 @@
     detected: '2026-10-14'
   status: not-a-workflow
   arazzo: null
+- slug: 247-ai-maven-central
+  label: Maven Central
+  partner: maven-central
+  partner_name: Maven Central
+  category: official SDK (Java/JVM)
+  type: register
+  channel: package-registry
+  evidence: https://central.sonatype.com/artifact/com.github.247-ai/FlashML
+  source: edge
+  relationship: distribution-channel
+  contract_reference:
+    register: Maven Central (public registry JSON)
+    spec_file: null
+    language: Java/JVM
+    packages:
+    - name: com.github.247-ai:FlashML
+      version: '2019.4'
+      released: '2020-01-17'
+      released_field: lastUpdated
+      lapsed: true
+      page: https://central.sonatype.com/artifact/com.github.247-ai/FlashML
+      repo_leg: github-org:247-ai
+      publisher_leg: org:247-ai
+      matched_by: github-org
+    - name: com.github.247-ai:Flashml-Log-Server
+      version: '1.0'
+      released: '2019-12-09'
+      released_field: lastUpdated
+      lapsed: true
+      page: https://central.sonatype.com/artifact/com.github.247-ai/Flashml-Log-Server
+      repo_leg: github-org:247-ai
+      publisher_leg: org:247-ai
+      matched_by: github-org
+    - name: com.github.247-ai:ModelServer
+      version: '1.0'
+      released: '2019-12-20'
+      released_field: lastUpdated
+      lapsed: true
+      page: https://central.sonatype.com/artifact/com.github.247-ai/ModelServer
+      repo_leg: github-org:247-ai
+      publisher_leg: org:247-ai
+      matched_by: github-org
+    - name: com.github.247-ai:Tucana
+      version: '1.0'
+      released: '2019-12-20'
+      released_field: lastUpdated
+      lapsed: true
+      page: https://central.sonatype.com/artifact/com.github.247-ai/Tucana
+      repo_leg: github-org:247-ai
+      publisher_leg: org:247-ai
+      matched_by: github-org
+    current: false
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  status: not-a-workflow
+  arazzo: null
+- slug: 247-ai-sequoia-capital
+  label: Sequoia Capital
+  partner: sequoia-capital
+  partner_name: Sequoia Capital
+  category: vc portfolio participation
+  type: register
+  channel: standard-directory
+  evidence: https://sequoiacap.com/companies/247
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: Sequoia Capital companies (sequoiacap.com/companies/<slug>, from the site's sitemap.xml)
+    standard: null
+    spec_file: null
+    role: vc-portfolio-company
+    registered_name: '[24]7.ai'
+    register_id: https://sequoiacap.com/companies/247
+    register_country: null
+    register_website: https://www.247.ai/
+    matched_domain: 247.ai
+    matched_by: domain
+    signal_note: 'participation only: the venture firm''s own published portfolio lists the company (investment);
+      an ownership and participation record, not conformance or certification'
+    detected_by: sweep-vc-portfolios.py
+    detected: '2026-10-21'
+  status: not-a-workflow
+  arazzo: null
