@@ -64,9 +64,107 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-[24]7.ai is a customer-experience (CX) software and services company headquartered in Campbell, California, operating the [24]7 Engagement Cloud — an AI-powered omnichannel platform spanning campaign management, conversation automation (chatbots, natural-language IVR, async messaging), agent experience and conversational intelligence — alongside managed CX and customer-care outsourcing operations.
+[24]7.ai is a customer-experience (CX) software and services company headquartered in Campbell, California, operating the [24]7 Engagement Cloud — an AI-powered omnichannel platform spanning campaign management and intent-based targeting ([24]7 Target), conversation automation (Answers, Conversations, Voices natural-language IVR, async messaging), agent experience (Assist / Copilot console, case management, traffic management) and conversational intelligence (100% interaction analytics). Alongside the platform it runs managed CX and customer-care outsourcing operations from the US, India, the Philippines, Colombia and Guatemala. Platform capabilities are marketed as integrating with CRMs and back-office systems through "API hooks", but no public developer portal, API reference or machine-readable contract is published: product documentation and API access sit behind the Okta-backed customer login at login.247.ai, and the production API host api.247-inc.net is tenant-routed.
 
-Profiled 2026-09-05. [24]7.ai publishes **no public developer portal, API reference, or machine-readable contract**: product documentation and API access sit behind the Okta-backed customer login at `login.247.ai`, and the production API host `api.247-inc.net` is tenant-routed (apex returns 503). What it does publish, and what this repository captures, is a verbatim `llms.txt`, live OpenID Connect and OAuth 2.0 discovery documents, a named security/compliance posture, a contractual SLA, a quarterly product-release surface, and four first-party open-source packages on Maven Central.
+**Areas:** Company · Customer Experience · Conversational AI · Contact Center · Customer Service · Chatbots · CCaaS · Artificial Intelligence · Interaction Analytics · Business Process Outsourcing
 
-- https://www.247.ai/
-- https://github.com/247-ai
+## [24]7.ai on APIs.io
+
+Everything profiled for [24]7.ai is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/247-ai/](https://apis.io/providers/247-ai/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [247 Ai Authentication](https://apis.io/security/247-ai/247-ai-authentication/)
+- [247 Ai Domain Security](https://apis.io/security/247-ai/247-ai-domain-security/)
+- [247 Ai Trust Center](https://apis.io/security/247-ai/247-ai-trust-center/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [247 Ai Scopes](https://apis.io/scopes/247-ai/247-ai-scopes/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [247 Ai Plans Pricing](https://apis.io/plans/247-ai/247-ai-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [247 Ai Rate Limits](https://apis.io/rate-limits/247-ai/247-ai-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.247.ai/)
+- [Support](https://www.247.ai/support/)
+- [Changelog](https://www.247.ai/insights/product-blogs/)
+- [Blog](https://www.247.ai/insights/blogs/)
+- [Compliance](https://www.247.ai/security/)
+- [Trust centre](https://www.247.ai/security/)
+- [Terms of service](https://www.247.ai/legal/platform-service-terms/)
+- [Privacy policy](https://www.247.ai/privacy-policy/)
+- [GitHub](https://github.com/247-ai)
+
+## API Evangelist rating
+
+**Kin Score 28.6** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 28.6 |
+| Access clarity | 50.0 |
+
+**Agent readiness 17.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+
+**Regulatory alignment 36.4** — AI & Biometrics
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/247-ai/](https://apis.io/providers/247-ai/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for [24]7.ai: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/247-ai/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
