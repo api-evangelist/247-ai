@@ -80,27 +80,27 @@ Each property below is a page on APIs.io carrying the machine-readable artifact 
 
 Authentication, trust centre, and vulnerability disclosure.
 
-- [247 Ai Authentication](https://apis.io/security/247-ai/247-ai-authentication/)
-- [247 Ai Domain Security](https://apis.io/security/247-ai/247-ai-domain-security/)
-- [247 Ai Trust Center](https://apis.io/security/247-ai/247-ai-trust-center/)
+- [[24]7.ai Authentication](https://apis.io/security/247-ai/247-ai-authentication/)
+- [[24]7.ai Domain Security](https://apis.io/security/247-ai/247-ai-domain-security/)
+- [[24]7.ai Trust Center](https://apis.io/security/247-ai/247-ai-trust-center/)
 
 #### OAuth scopes (1)
 
 The permissions the API asks for.
 
-- [247 Ai Scopes](https://apis.io/scopes/247-ai/247-ai-scopes/)
+- [[24]7.ai Scopes](https://apis.io/scopes/247-ai/247-ai-scopes/)
 
 #### Plans and pricing (1)
 
 Published plans, tiers and prices.
 
-- [247 Ai Plans Pricing](https://apis.io/plans/247-ai/247-ai-plans-pricing/)
+- [[24]7.ai Plans Pricing](https://apis.io/plans/247-ai/247-ai-plans-pricing/)
 
 #### Rate limits (1)
 
 Published request limits.
 
-- [247 Ai Rate Limits](https://apis.io/rate-limits/247-ai/247-ai-rate-limits/)
+- [[24]7.ai Rate Limits](https://apis.io/rate-limits/247-ai/247-ai-rate-limits/)
 
 ## Where to find this API
 
@@ -118,18 +118,18 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 28.6** — thin · rubric 0.24.0 · scored 2026-10-17
+**Kin Score 30.0** — thin · rubric 0.28.1 · scored 2026-11-21
 
 | Facet | Score |
 |---|---|
 | Discoverability | 55.4 |
 | Contract quality | 0.0 |
 | Contract governance | 18.2 |
-| Operational transparency | 18.4 |
+| Operational transparency | 23.8 |
 | Developer ergonomics | 28.6 |
-| Access clarity | 50.0 |
+| Access clarity | 57.4 |
 
-**Agent readiness 17.6** — agent-aware
+**Agent readiness 17.3** — agent-aware
 
 | Agent-readiness dimension | Result |
 |---|---|
@@ -152,8 +152,14 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Protected Resource Metadata | — |
 | Dynamic Client Registration | yes |
 | Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+| MCP Tool Quality | na |
+| Onboarding Descriptor | — |
+| Dns Aid Index | na |
+| Markdown Negotiation | na |
 
-**Regulatory alignment 36.4** — AI & Biometrics
+**Regulatory alignment 30.9** — AI & Biometrics
 
 The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/247-ai/](https://apis.io/providers/247-ai/).
 
